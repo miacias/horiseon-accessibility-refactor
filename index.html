@@ -12,7 +12,7 @@
     <header class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
         <nav>
-            <!--nav is used to denote navigation links to visit other parts of the website. screen readers pick these out (source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)-->
+            <!--NAV is used to denote navigation links to visit other parts of the website. screen readers pick these out (source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)-->
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -32,7 +32,7 @@
         (2) revise the file path in the CSS file from ../images/digital-marketing-meeting.jpg to ./images/digital-marketing-meeting.jpg with one less dot, thus one less upward folder or
         (3) place the .jpg file in the correct location (one folder up)
     -->
-    <!-- changed DIV to SECTION to follow common rules. Screen readers list out sections!-->
+    <!-- changed DIV to SECTION to follow common rules. Screen readers list out sections for users!-->
     <section 
         class="hero"
         alt="stock image: Four people crowd around a conference table to work on a common project with papers and laptops on the table.">
@@ -41,6 +41,7 @@
     <!--SECTION used for items with multiple, similar HEADINGS while DIV is used for larger place-holders-->
     <!--CLASS renamed from "content" to "strategies" because it more specifically explains Horiseon's approach to SEO-->
     <section class="strategies">
+        <!-- removed redundant IDs and left CLASS attributes so that screen readers can still interpret the page -->
         <div class="search-engine-optimization">
             <img 
                 src="./assets/images/search-engine-optimization.jpg" 

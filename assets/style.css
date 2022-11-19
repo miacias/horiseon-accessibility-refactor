@@ -23,8 +23,8 @@ body {
 .header h1 .seo {
     color: #d9dcd6;
 }
-
-.header section {
+/* Adjusted CSS to talk to .header CLASS and apply to each item under NAV in the HTML */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +32,11 @@ body {
     font-size: 20px;
 }
 
-.header section ul {
+.header nav ul {
     list-style-type: none;
 }
 
-.header section ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -49,7 +49,7 @@ a {
 p {
     font-size: 16px;
 }
-
+/* unchanged */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,14 +58,13 @@ p {
     background-size: cover;
     background-position: center;
 }
-
 /*.content changed to .strategies to match HTML changes*/
 .strategies {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-/*changed class from CONTENT to STRATEGIES*/
+/*changed class from CONTENT to STRATEGIES to match HTML*/
 .strategies div {
     margin-bottom: 20px;
     padding: 50px;
@@ -83,12 +82,10 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-/*FLOATs changed from class (.) to ID (#) to test: still broken*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
 .float-right {
     float: right;
     margin-left: 25px;
