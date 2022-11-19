@@ -58,52 +58,12 @@ p {
     background-size: cover;
     background-position: center;
 }
-/*FLOATs changed from class (.) to ID (#) to test: still broken*/
-#float-left {
-    float: left;
-    margin-right: 25px;
-}
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
 /*.content changed to .strategies to match HTML changes*/
 .strategies {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-/*Switches classes from benefit-lead, benefit-brand, benefit-cost to ID "lead, brand, cost"*/
-#lead, #brand, #cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/*You can write CLASS HTML-SELECTOR to specify two things, in this case, searching for class of benefits that also has specifically listed IDs*/
-
-/*It is possible to combine HTML element selectors <> with CSS classes to separate them 
-h3.benefits - this means any HTML h3 element on the page that has a CSS class of "benefits" will be targeted */
-.benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-/*Combined HTML element selector with CSS*/
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 /*changed class from CONTENT to STRATEGIES*/
 .strategies {
@@ -122,6 +82,48 @@ h3.benefits - this means any HTML h3 element on the page that has a CSS class of
 .strategies h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+/*FLOATs changed from class (.) to ID (#) to test: still broken*/
+#float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+/*Switch classes from benefit-lead, benefit-brand, benefit-cost to ID "lead, brand, cost"*/
+#lead, #brand, #cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/*You can write CLASS HTML-SELECTOR to specify two things, in this case, searching for class of benefits that also has specifically listed IDs*/
+
+/*It is possible to combine HTML element selectors <> with CSS classes to separate them 
+h3.benefits - this means any HTML h3 element on the page that has a CSS class of "benefits" will be targeted.
+Consolidating CSS into using the parent HTML class attribute was preferred over individual child class attributes because of optimal performance (unsure?)*/
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*Combined HTML element selector with CSS*/
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 /*unchanged*/
 .footer {
