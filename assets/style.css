@@ -23,6 +23,7 @@ body {
 .header h1 .seo {
     color: #d9dcd6;
 }
+
 /* Adjusted CSS to talk to .header CLASS and apply to each item under NAV in the HTML */
 .header nav {
     padding-top: 15px;
@@ -49,6 +50,7 @@ a {
 p {
     font-size: 16px;
 }
+
 /* unchanged */
 .hero {
     height: 800px;
@@ -58,12 +60,14 @@ p {
     background-size: cover;
     background-position: center;
 }
+
 /*.content changed to .strategies to match HTML changes*/
 .strategies {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
 /*changed class from CONTENT to STRATEGIES to match HTML*/
 .strategies div {
     margin-bottom: 20px;
@@ -73,19 +77,23 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+
 /*Removed individualized class attributes and replaced with DIV STRATEGIES. Marking IMG afterwards indicates all images that are in STRATEGIES will receive CSS changes*/
 .strategies img {
     max-height: 200px;
 }
+
 /*Consolidated multiple class names to CLASS SELECTOR with an over-arching class*/
 .strategies h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
 .float-left {
     float: left;
     margin-right: 25px;
 }
+
 .float-right {
     float: right;
     margin-left: 25px;
@@ -117,12 +125,14 @@ Consolidating CSS into using the parent HTML class attribute was preferred over 
     margin-bottom: 10px;
     text-align: center;
 }
+
 /*Combined HTML element selector with CSS*/
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+
 /*unchanged*/
 .footer {
     padding: 30px;
@@ -130,6 +140,7 @@ Consolidating CSS into using the parent HTML class attribute was preferred over 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
 /*unchanged*/
 .footer h2 {
     font-size: 20px;
