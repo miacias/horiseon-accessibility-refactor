@@ -25,16 +25,13 @@ body {
 }
 
 /* Adjusted CSS to talk to .header CLASS and apply to each item under NAV in the HTML */
+/* removed unused UL and P from CSS */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
-
-.header nav ul {
-    list-style-type: none;
 }
 
 .header nav ul li {
@@ -45,10 +42,6 @@ body {
 a {
     color: #ffffff;
     text-decoration: none;
-}
-
-p {
-    font-size: 16px;
 }
 
 /* unchanged */
