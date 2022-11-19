@@ -105,8 +105,8 @@ h3.benefits - this means any HTML h3 element on the page that has a CSS class of
     margin: 10px auto;
     max-width: 150px;
 }
-
-.strategies {
+/*this section is still broken!*/
+#strategies {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -114,12 +114,12 @@ h3.benefits - this means any HTML h3 element on the page that has a CSS class of
     background-color: #0072bb;
     color: #ffffff;
 }
-/*consolidated multiple class names to SELECTOR.CLASS with an over-arching class*/
-.img.strategies {
+/*this section is still broken!*/
+.img#strategies {
     max-height: 200px;
 }
 /*consolidated multiple class names to SELECTOR.CLASS with an over-arching class*/
-.h2.strategies {
+.h2#strategies {
     margin-bottom: 20px;
     font-size: 36px;
 }
