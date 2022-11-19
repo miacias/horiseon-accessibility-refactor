@@ -24,7 +24,7 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+.header section {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +32,11 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.header section ul {
     list-style-type: none;
 }
 
-.header div ul li {
+.header section ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -54,7 +54,7 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-image: url("./images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -68,8 +68,8 @@ p {
     float: right;
     margin-left: 25px;
 }
-
-.content {
+/*.content changed to .strategies to match HTML changes*/
+.strategies {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -85,24 +85,22 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead, 
-.benefit-brand, 
-.benefit-cost {
+/*Simplified classes from benefit-lead, benefit-brand, benefit-cost to simply "benefits"*/
+.benefits {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-lead h3, 
-.benefit-brand h3, 
-.benefit-cost h3 {
+/*You can write CLASS.ID to specify two things, in this case, searching for class of benefits that also has specifically listed IDs*/
+
+/*It is possible to combine HTML element selectors <> with CSS classes with a period (.) to separate them 
+h3.benefits - this means any HTML h3 element on the page that has a CSS class of "benefits" will be targeted */
+.h3.benefits {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-lead img, 
-.benefit-brand img, 
-.benefit-cost img {
+/*Combined HTML element selector with CSS*/
+.img.benefits {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -131,14 +129,14 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/*unchanged*/
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-#footer h2 {
+/*SELECTOR.CLASS to denote that the H2 part of the FOOTER class receives CSS*/
+.h2.footer {
     font-size: 20px;
 }
