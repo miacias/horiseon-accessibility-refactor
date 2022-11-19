@@ -58,8 +58,8 @@ p {
     background-size: cover;
     background-position: center;
 }
-
-.float-left {
+/*FLOATs changed from class (.) to ID (#) to test: still broken*/
+#float-left {
     float: left;
     margin-right: 25px;
 }
@@ -106,7 +106,7 @@ h3.benefits - this means any HTML h3 element on the page that has a CSS class of
     max-width: 150px;
 }
 /*this section is still broken!*/
-#strategies {
+.strategies {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -114,12 +114,12 @@ h3.benefits - this means any HTML h3 element on the page that has a CSS class of
     background-color: #0072bb;
     color: #ffffff;
 }
-/*this section is still broken!*/
-.img#strategies {
+/*Removed individualized class attributes and replaced with DIV STRATEGIES. Marking IMG afterwards indicates all images that are in STRATEGIES will receive CSS changes*/
+.strategies img {
     max-height: 200px;
 }
-/*consolidated multiple class names to SELECTOR.CLASS with an over-arching class*/
-.h2#strategies {
+/*Consolidated multiple class names to CLASS SELECTOR with an over-arching class*/
+.strategies h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
