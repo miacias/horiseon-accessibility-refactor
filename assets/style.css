@@ -130,7 +130,7 @@ h3.benefits - this means any HTML h3 element on the page that has a CSS class of
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-/*SELECTOR.CLASS to denote that the H2 part of the FOOTER class receives CSS*/
-.h2.footer {
+/*unchanged*/
+.footer h2 {
     font-size: 20px;
 }
