@@ -66,7 +66,7 @@ p {
     margin-left: 20px;
 }
 /*changed class from CONTENT to STRATEGIES*/
-.strategies {
+.strategies div {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -84,7 +84,7 @@ p {
     font-size: 36px;
 }
 /*FLOATs changed from class (.) to ID (#) to test: still broken*/
-#float-left {
+.float-left {
     float: left;
     margin-right: 25px;
 }
