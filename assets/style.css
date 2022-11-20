@@ -44,7 +44,7 @@ a {
     text-decoration: none;
 }
 
-/* unchanged */
+/* removed one period (.) from the file path to correct the CSS (reason being because of variance in starter code sourced from GitHub instead of GitLab. This will be corrected in future assignments!) */
 .hero {
     height: 800px;
     width: 100%;
@@ -112,7 +112,6 @@ a {
 /*You can write CLASS HTML-SELECTOR to specify two things, in this case, searching for class of benefits that also has specifically listed IDs*/
 
 /*It is possible to combine HTML element selectors <> with CSS classes to separate them 
-h3.benefits - this means any HTML h3 element on the page that has a CSS class of "benefits" will be targeted.
 Consolidating CSS into using the parent HTML class attribute was preferred over individual child class attributes because of optimal performance (unsure?)*/
 .benefits h3 {
     margin-bottom: 10px;
