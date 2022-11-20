@@ -1,0 +1,5 @@
+# .DS_Store is a Macbook file that saves Finder data and exposes user privacy
+.DS_Store
+
+# .vscode configurations are set to private for security
+.vscode
