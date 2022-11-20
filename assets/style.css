@@ -24,7 +24,9 @@ body {
     color: #d9dcd6;
 }
 
-.header section {
+/* Adjusted CSS to talk to .header CLASS and apply to each item under NAV in the HTML */
+/* removed unused UL and P from CSS */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +34,7 @@ body {
     font-size: 20px;
 }
 
-.header section ul {
-    list-style-type: none;
-}
-
-.header section ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -46,10 +44,7 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
+/* removed one period (.) from the file path to correct the CSS (reason being because of variance in starter code sourced from GitHub instead of GitLab. This will be corrected in future assignments!) */
 .hero {
     height: 800px;
     width: 100%;
@@ -57,6 +52,34 @@ p {
     background-image: url("./images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/*.content changed to .strategies to match HTML changes*/
+.strategies {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*changed class from CONTENT to STRATEGIES to match HTML*/
+.strategies div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*Removed individualized class attributes and replaced with DIV STRATEGIES. Marking IMG afterwards indicates all images that are in STRATEGIES will receive CSS changes*/
+.strategies img {
+    max-height: 200px;
+}
+
+/*Consolidated multiple class names to CLASS SELECTOR with an over-arching class*/
+.strategies h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .float-left {
@@ -67,12 +90,6 @@ p {
 .float-right {
     float: right;
     margin-left: 25px;
-}
-/*.content changed to .strategies to match HTML changes*/
-.strategies {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
 }
 
 .benefits {
@@ -85,50 +102,29 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/*Simplified classes from benefit-lead, benefit-brand, benefit-cost to simply "benefits"*/
-.benefits {
+/*Switch classes from benefit-lead, benefit-brand, benefit-cost to ID "lead, brand, cost"*/
+/* Made separate IDs obsolete by changing CSS to benefits CLASS and DIV */
+.benefits div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/*You can write CLASS.ID to specify two things, in this case, searching for class of benefits that also has specifically listed IDs*/
+/*You can write CLASS HTML-SELECTOR to specify two things, in this case, searching for class of benefits that also has specifically listed IDs*/
 
-/*It is possible to combine HTML element selectors <> with CSS classes with a period (.) to separate them 
-h3.benefits - this means any HTML h3 element on the page that has a CSS class of "benefits" will be targeted */
-.h3.benefits {
+/*It is possible to combine HTML element selectors <> with CSS classes to separate them 
+Consolidating CSS into using the parent HTML class attribute was preferred over individual child class attributes because of optimal performance (unsure?)*/
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+
 /*Combined HTML element selector with CSS*/
-.img.benefits {
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.search-engine-optimization, 
-.online-reputation-management, 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img, 
-.online-reputation-management img, 
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2, 
-.online-reputation-management h2,
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 /*unchanged*/
 .footer {
     padding: 30px;
@@ -136,7 +132,8 @@ h3.benefits - this means any HTML h3 element on the page that has a CSS class of
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-/*SELECTOR.CLASS to denote that the H2 part of the FOOTER class receives CSS*/
-.h2.footer {
+
+/*unchanged*/
+.footer h2 {
     font-size: 20px;
 }
