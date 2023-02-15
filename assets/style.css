@@ -1,13 +1,16 @@
+/* wildcard sets standard page elements */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* sets entire background */
 body {
     background-color: #d9dcd6;
 }
 
+/* space around header, font, background, text color */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -92,6 +95,7 @@ a {
     margin-left: 25px;
 }
 
+/* spacing, background color, and font */
 .benefits {
     margin-right: 20px;
     padding: 20px;
