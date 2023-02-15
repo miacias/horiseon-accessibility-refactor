@@ -11,11 +11,13 @@ I learned the value of testing code changes in atomic level (smallest piece of c
 
 ## Installation 
 
-N/A
+N/A [Deployed site here!](https://miacias.github.io/horiseon-accessibility-refactor/)
 
 ## Usage 
 
 This page advertises Horiseon, a marketing company, by displaying its strategies for implementing their services as well as the benefits of employing their services. Each section displays accessibly functional HTML and CSS for all users. When implementing a screen reader or other assistive technologies, navigational links and images are marked.
+
+![A website landing page shows imagery of folks working together at a table and summaries of their services](/assets/images/screencapture-horiseon-full-page.png)
 
 ## Credits 
 
